@@ -255,7 +255,7 @@
       "url": "https://packages.unity.com"
     },
     "uk.lunalabs.luna": {
-      "version": "file:C:/Users/Artiom/Downloads/playworks_6.3.0/scripts",
+      "version": "file:C:/Users/Artiom/Downloads/luna_playworks/scripts",
       "depth": 0,
       "source": "local",
       "dependencies": {}
