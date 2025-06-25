@@ -1,0 +1,1 @@
+{"id":28076,"path":"Assets/Resources/Blocks/block_final.prefab","assetBundleId":-1,"components":[{"type":3,"id":28380,"data":[0.5,0.5,0.5,0.5,0.5,0.5,120,120,234,-93,0,0,0,0,1,1,1,1]},{"type":8,"id":28382,"data":[1]},{"type":5,"id":28384,"enabled":1,"class":9,"data":[10,28386,0,0,1,4,1,1,0,0,1,null,null,1,1,1,1,1,1,0,0,0,0]}],"children":[],"data":["block_final",0,1,0,0]}
