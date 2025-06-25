@@ -3,6 +3,7 @@ using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.Infrastructure.Factories;
 using CodeBase.Infrastructure.Services;
 using CodeBase.Services;
+using CodeBase.Services.UnityUIService;
 using System;
 using UnityEngine;
 
@@ -16,12 +17,14 @@ namespace CodeBase.Infrastructure.StateMachine
         private readonly GameStateMachine _stateMachine;
         private readonly SceneLoader _sceneLoader;
         private readonly AllServices _services;
+        private readonly ICoroutineRunner _runner;
 
-        public BootstrapState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, AllServices services)
+        public BootstrapState(GameStateMachine gameStateMachine, ICoroutineRunner runner, SceneLoader sceneLoader, AllServices services)
         {
             _stateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
             _services = services;
+            _runner = runner;
             RegisterServices();
         }
 
@@ -29,8 +32,9 @@ namespace CodeBase.Infrastructure.StateMachine
         {
             _services.RegisterSingle<IInputService>(InputService());
             _services.RegisterSingle<IAssets>(new AssetProvider());
-            _services.RegisterSingle<IHudFactory>(new HudFactory(_services.Single<IAssets>()));
-            _services.RegisterSingle<IPlayerHelpService>(new PlayerHelpService(_services.Single<IHudFactory>(), _services.Single<IInputService>()));
+            _services.RegisterSingle<IUIService>(new UnityUIService());
+            _services.RegisterSingle<IHudFactory>(new HudFactory(_services.Single<IAssets>(), _services.Single<IUIService>()));
+            _services.RegisterSingle<IPlayerHelpService>(new PlayerHelpService(_runner, _services.Single<IHudFactory>(), _services.Single<IInputService>()));
         }
 
         private void EnterLoadLevel()

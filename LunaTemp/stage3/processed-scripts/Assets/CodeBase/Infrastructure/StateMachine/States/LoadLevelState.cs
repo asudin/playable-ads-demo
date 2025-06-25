@@ -8,8 +8,6 @@ namespace CodeBase.Infrastructure.StateMachine
     {
         private readonly GameStateMachine _stateMachine;
         private readonly SceneLoader _sceneLoader;
-        private const string CanvasParentPointTag = "CanvasParentPoint";
-        private const string HelpAnimationParentPointTag = "HelpAnimationParentPoint";
         private readonly IHudFactory _hudGameFactory;
 
         public LoadLevelState(GameStateMachine stateMachine, SceneLoader sceneLoader, IHudFactory gameFactory)
@@ -21,11 +19,7 @@ namespace CodeBase.Infrastructure.StateMachine
 
         private void OnLoaded()
         {
-            var canvasParent = GameObject.FindWithTag(CanvasParentPointTag);
-            var helpAnimationParent = GameObject.FindWithTag(HelpAnimationParentPointTag);
-
-            _hudGameFactory.CreateSceneHuds(canvasParent.transform, helpAnimationParent.transform);
-
+            _hudGameFactory.CreateSceneHuds();
             _stateMachine.Enter<GameLoopState>();
         }
 

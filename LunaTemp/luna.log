@@ -1,31 +1,31 @@
-report@config:load 33.55
+report@config:load 32.73
 Authorized using stored user info.
-report@account:authorize 23.27
+report@account:authorize 7.80
 stderr: 'rm' is not recognized as an internal or external command,
 operable program or batch file.
 
-Exporting assets from Unity.........
+Exporting assets from Unity......
 
 [ Stage1 ] Assets exported from Unity and staged for further processing
-report@unity:export 6090.35
-report@config:load 15.77
-Using D:/Utilities/UnityProjects/playworks_example/Library/PackageCache/com.unity.render-pipelines.core@14.0.12/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf file to generate an atlas for PerfectDOSVGA437[29894] font
+report@unity:export 3055.31
+report@config:load 15.20
+Using D:/Utilities/UnityProjects/playable-ads-demo/Library/PackageCache/com.unity.render-pipelines.core@14.0.12/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf file to generate an atlas for PerfectDOSVGA437[30282] font
   Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
-Combined 97 glyphs into bitmap texture at D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage1/tmp/fonts/PerfectDOSVGA437-29894/output_0.png (10kb)
+Combined 97 glyphs into bitmap texture at D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage1/tmp/fonts/PerfectDOSVGA437-30282/output_0.png (10kb)
 Resources:
 {}
-report@assets:stage2 3375.09
-report@assets:stage3 160.45
+report@assets:stage2 3101.52
+report@assets:stage3 164.36
 [ Stage2 ] Assets postprocessed and bundled successfully
 report@config:unity 0.10
-report@config:load 32.62
-report@config:unity 1.51
-report@code:compose 111.76
+report@config:load 36.51
+report@config:unity 0.23
+report@code:compose 117.95
 Authorized using stored user info.
-report@account:authorize 3.83
+report@account:authorize 3.44
 MSBuild version 17.13.19+0d9f5a35a for .NET Framework
 
-Build started 6/25/2025 11:09:50 AM.
+Build started 6/25/2025 3:22:14 PM.
 
 
 
@@ -91,20 +91,27 @@ GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 
 CoreCompile:
-  D:\Utilities\VisualStudio\IDE\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_59 /highentropyva+ /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\BlockType.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\FinalBlock.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\IMergeable.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\Mergeable.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\IHelpService.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\PlayerHelpService.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\AssetManagement\AssetPath.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\AssetManagement\AssetProvider.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\AssetManagement\IAssets.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Factories\HudFactory.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Factories\IHudFactory.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Game.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\GameBootstrapper.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\ICoroutineRunner.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\SceneLoader.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Services\AllServices.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Services\IService.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\GameStateMachine.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\BootstrapState.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\GameLoopState.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\ISTate.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\LoadLevelState.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\IInputService.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\InputService.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\MobileInputService.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\StandaloneInputService.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\UI\Buttons\BaseButton.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\UI\Buttons\DownloadGameButton.cs D:\Utilities\UnityProjects\playworks_example\LunaTemp\stage3\processed-scripts\Assets\CodeBase\UI\IAnimatable.cs Properties/AssemblyInfo
-.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  D:\Utilities\VisualStudio\IDE\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_59 /highentropyva+ /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\BlockType.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\FinalBlock.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\IMergeable.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Block\Mergeable.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\IHelpService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\PlayerHelpService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\AssetManagement\AssetPath.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\AssetManagement\AssetProvider.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\AssetManagement\IAssets.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Factories\HudFactory.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Factories\IHudFactory.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Game.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\GameBootstrapper.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\ICoroutineRunner.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\SceneLoader.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Services\AllServices.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\Services\IService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\GameStateMachine.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\BootstrapState.cs D:\Utilities\UnityProjects\playable-
+ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\GameLoopState.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\ISTate.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Infrastructure\StateMachine\States\LoadLevelState.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\InputService\IInputService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\InputService\InputService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\InputService\MobileInputService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\InputService\StandaloneInputService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\UnityUIService\IUIService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\Services\UnityUIService\UnityUIService.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\UI\Buttons\BaseButton.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\UI\Buttons\DownloadGameButton.cs D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\UI\IAnimatable.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(17,44): warning CS0649: Field 'HelpAnimationSystem._finalPositionMergeable' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(18,44): warning CS0649: Field 'HelpAnimationSystem._finalPositionHand' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(16,44): warning CS0649: Field 'HelpAnimationSystem._mergeable' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(15,44): warning CS0649: Field 'HelpAnimationSystem._helpHand' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
   CompilerServer: server - server processed compilation - Scripts
 
 _CopyFilesMarkedCopyLocal:
-  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
-
-  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
-  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
-
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
 
+  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+
+  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
 
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
@@ -118,22 +125,23 @@ _CopyFilesMarkedCopyLocal:
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
 
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
-  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
 
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
 
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
 
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
 
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
 
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
 
-  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
-
   Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+  Copying file from "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
 
   Creating "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" because "AlwaysCreate" was specified.
 
@@ -150,7 +158,6 @@ BridgeNetCompilerTask:
   Bridge started
 
       To enable detailed logging, configure "logging" in bridge.json.
-
       https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
 
   Bridge done
@@ -159,11 +166,21 @@ Done Building Project "C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templa
 
 
 Build succeeded.
-    0 Warning(s)
+
+
+
+"C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+(CoreCompile target) -> 
+  D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(17,44): warning CS0649: Field 'HelpAnimationSystem._finalPositionMergeable' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(18,44): warning CS0649: Field 'HelpAnimationSystem._finalPositionHand' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(16,44): warning CS0649: Field 'HelpAnimationSystem._mergeable' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Utilities\UnityProjects\playable-ads-demo\LunaTemp\stage3\processed-scripts\Assets\CodeBase\HelpSystem\HelpAnimationSystem.cs(15,44): warning CS0649: Field 'HelpAnimationSystem._helpHand' is never assigned to, and will always have its default value null [C:\Users\Artiom\Downloads\playworks_6.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    4 Warning(s)
     0 Error(s)
 
 
-Time Elapsed 00:00:12.68
+Time Elapsed 00:00:07.44
 
 Source code compiled successfully!
 ﻿
@@ -171,13 +188,13 @@ Source code compiled successfully!
 PHC: LP error code not found in JSON: 3015, JSON file might be outdated. Error message: Sequence contains no matching element
 
 Diagnostics gathered successfully
-report@code:build 21933.76
-report@diagnostics:verify 0.46
-report@diagnostics:upload 1230.54
-report@code:stage 6793.70
+report@code:build 12664.09
+report@diagnostics:verify 0.41
+report@diagnostics:upload 1243.98
+report@code:stage 6534.46
 [ Stage3 ] Code compiled and bundled successfully.
-report@code:bundle 30120.33
-report@package:stage 1425.35
+report@code:bundle 20603.64
+report@package:stage 952.72
 [ Stage4 ] Target platform: develop
 [ Stage4 ] Package bundled successfully
-report@assets:stats 0.23
+report@assets:stats 0.32

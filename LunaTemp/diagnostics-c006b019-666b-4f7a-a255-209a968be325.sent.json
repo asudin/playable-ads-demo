@@ -1,0 +1,89 @@
+{
+    "BuildID": "c006b019-666b-4f7a-a255-209a968be325",
+    "Command": "project:build",
+    "ProjectID": "138f4ed7396f9564daf26453eef123a6",
+    "ProjectStateHash": "61d100b1a21e220305bf874fb6e29e0213101aff14abbe45162f23298284099e",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1750854125064,
+    "EndTime": 1750854144493,
+    "PlaygroundUserID": 24188,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "develop",
+    "UnityVersion": "2022.3.59f1",
+    "LunaVersion": "6.3.0",
+    "LogCount": 3,
+    "Logs": [
+        {
+            "LogID": "5e3da9ea-8a7b-4c73-8a30-4f6d71918851",
+            "Order": 1,
+            "Timestamp": 1750854144645,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3015",
+            "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "89c6950d-3e9f-4592-b66a-6647cc0e24f6",
+            "Order": 1,
+            "Timestamp": 1750854144646,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "d9a41ef8-5a93-45ca-b78b-ff0466ec003c",
+            "Order": 1,
+            "Timestamp": 1750854144646,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

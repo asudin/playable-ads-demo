@@ -2,42 +2,44 @@
   "ignores": [],
   "groups": [
     [
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/BlockType.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/IMergeable.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/Mergeable.cs"
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/BlockType.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/IMergeable.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/Mergeable.cs"
     ],
     [
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/FinalBlock.cs"
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Block/FinalBlock.cs"
     ],
     [
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/HelpSystem/HelpAnimationSystem.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/HelpSystem/PlayerHelpService.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/GameBootstrapper.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/ICoroutineRunner.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Game.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/ISTate.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/GameLoopState.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/HelpSystem/IHelpService.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Services/IService.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/AssetManagement/IAssets.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/AssetManagement/AssetProvider.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Factories/HudFactory.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Factories/IHudFactory.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/AssetManagement/AssetPath.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Services/AllServices.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/IInputService.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/InputService.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/MobileInputService.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/StandaloneInputService.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/SceneLoader.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/UI/IAnimatable.cs"
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/HelpSystem/HelpAnimationSystem.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/HelpSystem/PlayerHelpService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/BootstrapState.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/GameBootstrapper.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/ICoroutineRunner.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Game.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/GameStateMachine.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/LoadLevelState.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/ISTate.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/StateMachine/States/GameLoopState.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/HelpSystem/IHelpService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Services/IService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/AssetManagement/IAssets.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/AssetManagement/AssetProvider.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Factories/HudFactory.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Factories/IHudFactory.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/UnityUIService/IUIService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/UnityUIService/UnityUIService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/AssetManagement/AssetPath.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/Services/AllServices.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/InputService/IInputService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/InputService/InputService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/InputService/MobileInputService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Services/InputService/StandaloneInputService.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/Infrastructure/SceneLoader.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/UI/IAnimatable.cs"
     ],
     [
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/UI/Buttons/BaseButton.cs",
-      "D:/Utilities/UnityProjects/playworks_example/LunaTemp/stage3/processed-scripts/Assets/CodeBase/UI/Buttons/DownloadGameButton.cs"
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/UI/Buttons/BaseButton.cs",
+      "D:/Utilities/UnityProjects/playable-ads-demo/LunaTemp/stage3/processed-scripts/Assets/CodeBase/UI/Buttons/DownloadGameButton.cs"
     ],
     [
       "C:/Users/Artiom/Downloads/playworks_6.3.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
