@@ -4,6 +4,6 @@
     {
         public const string GameHud = "Screens/GameScreen";
         public const string EndGameHud = "Screens/EndGameScreen";
-        public const string HelpAnimationHud = "Screens/HelpAnimationScreen";
+        public const string PlayerHelpHud = "Screens/PlayerHelpScreen";
     }
 }

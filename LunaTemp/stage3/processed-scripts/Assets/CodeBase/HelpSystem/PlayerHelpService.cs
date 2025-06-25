@@ -1,74 +1,67 @@
+﻿using CodeBase.Infrastructure;
 using CodeBase.Infrastructure.Factories;
 using CodeBase.Services;
 using System;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Collections;
 using UnityEngine;
 
 namespace CodeBase.HelpSystem
 {
     public class PlayerHelpService : IPlayerHelpService, IDisposable
     {
-        private readonly IHudFactory _factory;
-        private readonly IInputService _inputService;
         private HelpAnimationSystem _helpSystem;
         private GameObject _endGameHud;
-        private CancellationTokenSource _cancellationTokenSource;
+        private Coroutine _monitoringCoroutine;
+        private readonly IHudFactory _factory;
+        private readonly IInputService _inputService;
         private bool _isMonitoring = false;
         private const float IdleThreshold = 3f;
-        private const int MinMillisWait = 1;
+        private ICoroutineRunner _coroutineRunner;
 
-        public PlayerHelpService(IHudFactory factory, IInputService inputService)
+        public PlayerHelpService(ICoroutineRunner runner, IHudFactory factory, IInputService inputService)
         {
             _factory = factory;
             _inputService = inputService;
+            _coroutineRunner = runner;
         }
 
-        private async Task MonitorPlayerIdleAsync([Bridge.Ref] CancellationToken cancellationToken)
+        private IEnumerator MonitorPlayerIdleCoroutine()
         {
             float idleTime = 0f;
             bool helpAnimationStarted = false;
-
             GetFactoryHuds();
 
             if (_helpSystem == null)
-                return;
+                yield break;
 
-            while (!cancellationToken.IsCancellationRequested)
+            while (_isMonitoring)
             {
-                try
+                if (_inputService?.IsPlayerInputAllowed == false)
                 {
-                    if (_inputService?.IsPlayerInputAllowed == false)
-                    {
-                        ResetAndCleanup();
-                        return;
-                    }
-
-                    if (Input.anyKey || Input.GetMouseButtonDown(0) || Input.touchCount > 0)
-                    {
-                        if (helpAnimationStarted)
-                        {
-                            _helpSystem.StopAnimation();
-                            helpAnimationStarted = false;
-                        }
-                        _endGameHud?.SetActive(true);
-                        return;
-                    }
-
-                    idleTime += Time.deltaTime;
-
-                    if (idleTime >= IdleThreshold && !helpAnimationStarted)
-                    {
-                        helpAnimationStarted = true;
-                        _helpSystem.StartAnimation();
-                    }
-
-                    await Task.Delay(MinMillisWait);
+                    ResetAndCleanup();
+                    yield break;
                 }
-                catch (OperationCanceledException)
+
+                if (Input.anyKey || Input.GetMouseButtonDown(0) || Input.touchCount > 0)
                 {
-                    break;
+                    if (helpAnimationStarted)
+                    {
+                        _helpSystem.StopAnimation();
+                        helpAnimationStarted = false;
+                    }
+                    _endGameHud?.SetActive(true);
+                    yield break;
                 }
+
+                idleTime += Time.deltaTime;
+
+                if (idleTime >= IdleThreshold && !helpAnimationStarted)
+                {
+                    helpAnimationStarted = true;
+                    _helpSystem.ShowAnimation(); 
+                }
+
+                yield return null;
             }
 
             if (helpAnimationStarted && _helpSystem != null)
@@ -96,30 +89,27 @@ namespace CodeBase.HelpSystem
             {
                 _helpSystem.StopAnimation();
             }
-
             _isMonitoring = false;
         }
 
         public void StartMonitoring()
         {
-            if (_isMonitoring)
+            if (_isMonitoring || _coroutineRunner == null)
                 return;
 
             StopMonitoring();
-            _cancellationTokenSource = new CancellationTokenSource();
             _isMonitoring = true;
-            _ = MonitorPlayerIdleAsync(_cancellationTokenSource.Token);
+            _monitoringCoroutine = _coroutineRunner.StartCoroutine(MonitorPlayerIdleCoroutine());
         }
 
         public void StopMonitoring()
         {
             _isMonitoring = false;
 
-            if (_cancellationTokenSource != null)
+            if (_monitoringCoroutine != null && _coroutineRunner != null)
             {
-                _cancellationTokenSource.Cancel();
-                _cancellationTokenSource.Dispose();
-                _cancellationTokenSource = null;
+                _coroutineRunner.StopCoroutine(_monitoringCoroutine);
+                _monitoringCoroutine = null;
             }
 
             if (_helpSystem != null)

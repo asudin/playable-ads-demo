@@ -8,6 +8,6 @@ namespace CodeBase.Infrastructure.Factories
         GameObject EndGameHud { get; }
         GameObject PlayerHelpHud { get; }
 
-        void CreateSceneHuds(Transform canvasParent, Transform helpAnimationParent);
+        void CreateSceneHuds();
     }
 }

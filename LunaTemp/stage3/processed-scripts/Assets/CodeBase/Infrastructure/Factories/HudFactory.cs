@@ -1,4 +1,5 @@
 ﻿using CodeBase.Infrastructure.AssetManagement;
+using CodeBase.Services.UnityUIService;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,58 +9,55 @@ namespace CodeBase.Infrastructure.Factories
     public class HudFactory : IHudFactory
     {
         private readonly IAssets _assets;
-        private List<GameObject> _huds = new List<GameObject>();
+        private readonly IUIService _uiService;
+        private List<string> _hudPaths = new List<string>
+        {
+            AssetPath.GameHud,
+            AssetPath.EndGameHud,
+            AssetPath.PlayerHelpHud
+        };
 
         public GameObject EndGameHud { get; private set; }
         public GameObject PlayerHelpHud { get; private set; }
 
-        public HudFactory(IAssets assets)
+        public HudFactory(IAssets assets, IUIService service)
         {
             _assets = assets;
+            _uiService = service;
         }
 
-        private void SetParent(GameObject item, Transform parent)
+        private GameObject CreateHud(string path)
         {
-            if (item == null)
-                return;
-
-            item.transform.SetParent(parent);
+            return _assets.Instantiate(path);
         }
 
-        private void CreateEndGameHud(Transform parent)
+        public void CreateSceneHuds()
         {
-            EndGameHud = _assets.Instantiate(AssetPath.EndGameHud);
-            SetParent(EndGameHud, parent);
-            EndGameHud.gameObject.SetActive(false);
-            _huds.Add(EndGameHud);
-        }
+            _uiService.Initialize();
 
-        private void CreatePlayerHelpHud(Transform parent)
-        {
-            PlayerHelpHud = _assets.Instantiate(AssetPath.HelpAnimationHud);
-            SetParent(PlayerHelpHud, parent);
-            _huds.Add(PlayerHelpHud);
+            var parentPoint = _uiService.ParentScreenPoint;
 
-            SetStretch(PlayerHelpHud.GetComponent<RectTransform>());
-        }
-
-        private void SetStretch(RectTransform rectTransform)
-        {
-            rectTransform.offsetMax = Vector2.zero;
-            rectTransform.offsetMin = Vector2.zero;
-            rectTransform.anchorMin = Vector2.zero;
-            rectTransform.anchorMax = Vector2.one;
-            rectTransform.pivot = new Vector2(0.5f, 0.5f);
-        }
-
-        public void CreateSceneHuds(Transform canvasParent, Transform animationParent)
-        {
-            CreateEndGameHud(canvasParent);
-            CreatePlayerHelpHud(animationParent);
-
-            foreach (var hud in _huds)
+            foreach (var path in _hudPaths)
             {
-                LayoutRebuilder.ForceRebuildLayoutImmediate(hud.GetComponent<RectTransform>());
+                var hud = CreateHud(path);
+
+                _uiService.SetScreenParent(hud, parentPoint);
+
+                if (path == AssetPath.EndGameHud)
+                {
+                    EndGameHud = hud;
+                    hud.gameObject.SetActive(false);
+                }
+
+                if (path == AssetPath.PlayerHelpHud)
+                {
+                    PlayerHelpHud = hud;
+                }
+
+                var canvasRectTransform = hud.GetComponentInChildren<Canvas>().GetComponent<RectTransform>();
+
+                _uiService.SetStretch(canvasRectTransform);
+                LayoutRebuilder.ForceRebuildLayoutImmediate(canvasRectTransform);
             }
         }
     }
